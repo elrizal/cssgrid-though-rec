@@ -4,7 +4,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0
 }
-li a{
+
+li a {
     text-decoration: none;
     text-transform: uppercase;
     color: teal;
@@ -16,12 +17,15 @@ li a{
     -ms-transition: ease-in 1;
     -o-transition: ease-in 1;
 }
+
 li a:hover {
     color: lightsteelblue
 }
-h1{
+
+h1 {
     margin: 10px 0px 10px 0px;
 }
+
 .main {
     background: white;
     max-width: 80vw;
@@ -31,34 +35,46 @@ h1{
     order: 1;
     min-height: 300px;
 }
-.centeritems{
+
+.centeritems {
     justify-content: center;
 }
+
+.textcenter {
+    text-align: center;
+}
+
 .container {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .start-grid-at {
     display: grid;
     grid-gap: 10px;
     /* grid-template-columns: 20% 20%; */
     grid-template-rows: [row] auto;
 }
+
 .content {
     margin: 50px 0px 100px 0px;
     position: relative;
 }
+
 .navigation {
     background: white;
-  box-shadow: 0 0 20px 0px #00000021;
+    box-shadow: 0 0 20px 0px #00000021;
 }
-.introimg{
+
+.introimg {
     float: left;
-    margin: 10px;
+    margin: 15px;
+    padding: 10px;
     grid-row: row;
     order: 0;
 
 }
+
 li {
     text-decoration: none;
     list-style: none;
@@ -76,26 +92,30 @@ li {
     background: teal;
     grid-row: row;
 }
+
 .items-nav {
     /* grid-column: col 3 / span 2; */
     padding: 20px;
     grid-row: row;
     text-align: right;
 }
+
 .gallery {
     display: grid
 }
+
 footer {
     bottom: 0;
-    height: 2.5rem;    
+    height: 2.5rem;
     background: #252525;
     padding: 10px;
-   position: absolute;
+    position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%
+    width: auto
 }
-label {
+
+/* label {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -107,12 +127,12 @@ input {
 }
 input,textarea {
     margin: 10px 0px 10px 0px;
-    width: 99%
-}
-textarea {
+    width: 99% */
+/* } */
+/* textarea {
     height: 10em;
     border-color: lightgray
-}
+} */
 .formsub {
     text-transform: uppercase;
     color: gray;
@@ -122,22 +142,25 @@ textarea {
     height: 35px;
     margin: 10px 0px 10px 0px;
     min-width: 100px;
-    border-radius:10px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     border-color: gray;
     -webkit-transition: color 1s, height 1s;
-    /*ForSafari3.1to6.0*/transition: color 1s, border-color 1s;
+    /*ForSafari3.1to6.0*/
+    transition: color 1s, border-color 1s;
     -moz-transition: color 1s, border-color 1s;
     -ms-transition: color 1s, border-color 1s;
     -o-transition: color 1s, border-color 1s;
 }
+
 .formsub:hover {
     border-color: lightgray;
     color: lightgray
 }
+
 button:active {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -146,42 +169,190 @@ button:active {
     -ms-user-select: none;
     user-select: none;
 }
+
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
+    /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
+    /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+}
+/**
+ * Sivan[sun.sivan@gmail.com]
+ * This pen is using Autoprefixer
+ */
+ form {
+    width: 90%;
+    margin: 0 auto;
+}
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    display: block;
+    height: 1em;
+    width: 100%;
+    padding: 16px 8px;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    background: rgba(255, 255, 255, 0.97);
+    color: #212121;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-label fieldset {
+    position: relative;
+}
+
+.form-label fieldset:first-child input {
+    border-radius: 4px 4px 0 0;
+}
+
+/* .form-label fieldset:last-child input {
+
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+} */
+
+.form-label fieldset+fieldset {
+    border-top: 1px solid #ddd;
+}
+
+.form-label label {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    color: #909090;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-css-label input[data-empty="false"],
+.form-css-label input:valid,
+.form-css-label input:focus {
+    padding: 22px 8px 10px;
+}
+
+.form-css-label  input:focus {
+    outline: 0;
+    background: white;
+}
+
+.form-css-label input[data-empty="false"]+label,
+.form-css-label input:valid+label,
+.form-css-label input:focus+label {
+    color: #5856d6;
+    font-weight: 700;
+    font-size: 12px;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+}
+textarea{
+    width: 100%;
+    border-color: lightgray;
+    margin-top: 10px;
+    height: 8em;
+}
+.form-js-label input[data-empty="false"],
+.form-js-label input:focus {
+    padding: 22px 8px 10px;
+}
+
+.form-js-label input:focus {
+    outline: 0;
+    background: white;
+}
+
+.form-js-label input[data-empty="false"]+label,
+.form-js-label input:focus+label {
+    color: #5856d6;
+    font-weight: 700;
+    font-size: 12px;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+}
+
+    /* Custom, iPhone Retina */
+    @media screen and (max-width:768px) {
+        .logo{
+            width: auto
+        }
+        .start-grid-at{
+            display: block
+        }
+        .items-nav {
+            text-align: center;
+        }
+        .introimg {
+            float: none;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
