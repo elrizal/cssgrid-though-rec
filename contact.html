@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Grid Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/form.css">
+
 </head>
 
 <body>
@@ -24,9 +26,9 @@
         </div>
     </div>
     <div class="content">
-        <div class="main ">
+        <div class="main textcenter">
             <h1>Contact:</h1>
-            <form action="/my-handling-form-page" method="post">
+            <!-- <form action="/my-handling-form-page" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="user_name">
                 <label for="mail">E-mail:</label>
@@ -34,6 +36,29 @@
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
                 <button class="formsub centeritems">Send</button>
+            </form> -->
+
+            <form class="form-label form-css-label">
+                <fieldset>
+                    <input id="firstName" name="firstName" type="text" autocomplete="off" required />
+                    <label for="firstName">First Name</label>
+                </fieldset>
+                <fieldset>
+                    <input id="lastName" name="lastName" type="text" autocomplete="off" required />
+                    <label for="lastName">Last Name</label>
+                </fieldset>
+                <fieldset>
+                    <input id="email" name="email" type="text" autocomplete="off" required />
+                    <label for="email">Email Address</label>
+                </fieldset>
+                <fieldset>
+                    <textarea id="msg" name="user_message"></textarea>
+                    <label for="msg">Message </label>
+                </fieldset>
+
+                <br>
+                <button class="formsub centeritems">Send</button>
+
             </form>
         </div>
     </div>
